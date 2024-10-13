@@ -9,9 +9,3 @@ for sent in nltk.sent_tokenize(text):
 
 nltk_tokens_word = nltk.word_tokenize(text)
 print("\nNLTK Word Tokenization:", nltk_tokens_word)
-
-
-
-
-
-

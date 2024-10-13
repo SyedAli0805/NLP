@@ -9,6 +9,8 @@ text = "After several attempts, Sarah finally solved the puzzle. Exhausted yet r
 tokenizer = RegexpTokenizer(r'\w+')
 
 words = tokenizer.tokenize(text)
-
+lemma_words = []
 for word in words:
-    print(word," | ",lemmatizer.lemmatize(word))
+    lemma_words.append(lemmatizer.lemmatize(word))
+print("Original Words: ",words)
+print("\nLemmatized Words:",lemma_words)

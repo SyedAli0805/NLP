@@ -1,0 +1,1 @@
+#spaCy does not allow stemming . It does not have any built-in methods for stemming.

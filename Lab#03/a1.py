@@ -1,7 +1,7 @@
 import nltk
 from nltk import word_tokenize
 
-# Custom rule-based tagging
+
 patterns = [
 (r'.*ing$', 'VBG'), # gerunds
 (r'.*ed$', 'VBD'), # simple past
@@ -13,10 +13,8 @@ patterns = [
 (r'.*', 'NN') # default to noun
 ]
 
-# Input sentence
 sentence = "The cat is chasing the mouse."
 
-# Tokenize and apply rule-based POS tagging
 regexp_tagger = nltk.RegexpTagger(patterns)
 tokens = word_tokenize(sentence)
 tagged = regexp_tagger.tag(tokens)
